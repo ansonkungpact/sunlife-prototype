@@ -17655,7 +17655,7 @@ header .alert:hover {
 }
 
 .navbar-brand {
-    margin-top: 16px;
+    margin-top: 10px;
     padding: 0
 }
 
@@ -24200,7 +24200,7 @@ a[aria-expanded=true].hvr-icon-rotate:before {
         font-size: 16px
     }
     .navbar-brand img {
-        height: auto
+        height: 28px;
     }
     .navbar-toggle {
         display: block;
