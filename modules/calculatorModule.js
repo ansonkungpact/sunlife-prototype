@@ -16,7 +16,7 @@ const QUESTIONS = {
 		"What type of coverage would you like to inquire about? (Hospitalization, Outpatient, or Dental)"
 	],
 	"ASK_FOR_OUTPATIENT_TYPE_SERVICE": [
-		"Can you provide 9 digit <strong>FWD Policy Number</strong>?"
+		"Can you provide 9 digit <strong>Sun Life insurance Policy Number</strong>?"
 	],
 	"ASK_FOR_TYPE_HEALTH_INSURANCE": [
 		"What type of Outpatient coverage are you looking for? (Physician, Physiotherapist / Chiropractor, Specialist, Chinese Medicine Practitioner, or Diagnostic X-Ray / Lab Tests?)"
@@ -75,7 +75,7 @@ const QUESTIONS = {
 		"Sure, I would be happy to help you!"
 	],
 	"COVERAGE_ENQUIRY":[
-		"I see here that you have an Employee Benefits Health policy with us at FWD. What type of coverage would you like to inquire about? (Hospitalization, Outpatient, or Dental)"
+		"I see here that you have an Employee Benefits Health policy with us at Sun Life insurance. What type of coverage would you like to inquire about? (Hospitalization, Outpatient, or Dental)"
 	],
 	"RESTART":[
 		"Do you want to ask another question?"
@@ -93,7 +93,7 @@ const QUESTIONS = {
 		"Sure, I would be happy to help you. Here is the information on the relevant policy."
 	],
 	"HEALTH_POLICY_OPTION":[
-		"Please refer to this: <a> https://www.fwd.com.hk/en/protect/health-accident/medical/ </a>"
+		"Please refer to this: <a> https://www.sunlife.com.hk/ </a>"
 	]
 
 };
@@ -398,23 +398,23 @@ console.log(extractsFromQuestion.QTAG1);
 					   request.destination == 'outpatient' &&
 					   request.classType == 'chinese medicine practitioner' &&
 					   request.tierType == 'coverage'){
-					   callback("According to your policy, FWD medical insurance protects you with 30 times of network doctor visit or HK$100 claim for non-networked doctor visit within a year");
+					   callback("According to your policy, Sun Life medical insurance protects you with 30 times of network doctor visit or HK$100 claim for non-networked doctor visit within a year");
 					}
 
 					else if(request.origin != null && 
 					   request.destination == 'outpatient' &&
 					   request.classType == 'specialist' &&
 					   request.tierType == 'coverage'){
-					   callback("According to your policy, FWD medical insurance protects you with 30 times of network doctor visit or HK$200 claim for non-networked doctor visit within a year");
+					   callback("According to your policy, Sun Life medical insurance protects you with 30 times of network doctor visit or HK$200 claim for non-networked doctor visit within a year");
 					}
 
 					else if(request.origin != null && 
 					   request.destination == 'outpatient' &&
 					   request.classType == 'physician' &&
 					   request.tierType == 'claim'){
-					   callback("According to your policy, FWD medical insurance protects you with 30 times of network doctor visit or HK$250 claim for non-networked doctor visit within a year");
+					   callback("According to your policy, Sun Life medical insurance protects you with 30 times of network doctor visit or HK$250 claim for non-networked doctor visit within a year");
 					}else{
-						callback("According to your policy, FWD medical insurance protects you with 30 times of network doctor visit or HK$300 claim for non-networked doctor visit within a year");
+						callback("According to your policy, Sun Life medical insurance protects you with 30 times of network doctor visit or HK$300 claim for non-networked doctor visit within a year");
 					}
 				}
            });
